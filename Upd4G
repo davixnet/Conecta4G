@@ -1,1 +1,104 @@
 
+{
+  "Version": "1.0.4",
+  "ReleaseNotes": "",
+  "UrlUpdate": "https://raw.githubusercontent.com/davixnet/Conecta4g_site-UrlUpdate/main/Config4G",
+  "Sms": "https://raw.githubusercontent.com/davixnet/DX.NET_site-UrlSms/main/Dx.netsms",
+  "EmailFeedback": "dasou745@gmail.com",
+  "UrlContato": "https://t.me/Alexandressh",
+  "UrlTermos": "https://raw.githubusercontent.com/davixnet/dx.net_site-termos.html/main/Dx.nethtml",
+  "CheckUser": "true",
+  "Udp": [
+    {
+      "Porta": "7300"
+    },
+    {
+      "Porta": "7400"
+    },
+    {
+      "Porta": "7500"
+    },
+    {
+      "Porta": "7600"
+    },
+    {
+      "Porta": "7700"
+    }
+  ],
+  "Servers": [
+    {
+      "Name": "CONECTA4G | PLUS",
+      "TYPE": "premium",
+      "FLAG": "br.png",
+      "ServerIP": "br.baronnetssl.online",
+      "CheckUser": "http://152.67.43.26:5454/checkUser",
+      "ServerPort": "22",
+      "SSLPort": "443",
+      "USER": "",
+      "PASS": ""
+    },
+    {
+      "Name": "PREMIUM 02 | PLUS",
+      "TYPE": "premium",
+      "FLAG": "br.png",
+      "ServerIP": "br.baronnetssl.online",
+      "CheckUser": "http://152.67.43.26:5454/checkUser",
+      "ServerPort": "22",
+      "SSLPort": "443",
+      "USER": "",
+      "PASS": ""
+    }
+  ],
+  "Networks": [
+    {
+      "Name": "VIVO TODAS AS REGIÕES", 
+"FLAG": "vivo", 
+"Payload": "GET ws://vigia.vivo.com.br HTTP/1.1\nHost: br.baronnetssl.online\nUpgrade: ws\n\n", 
+"SNI": "vigia.vivo.com.br", 
+"TlsIP": "vigia.vivo.com.br", 
+"ProxyIP": "", 
+"ProxyPort": "", 
+"Info": "Tlsws"
+    },
+    {
+      "Name": "Name": "TIM SEM PROMOÇÃO",
+      "FLAG": "tim",
+      "Payload": "GET wss://cutim.com.br/ HTTP/1.1[crlf]Host: br.baronnetssl.online[crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "cutim.com.br",
+      "TlsIP": "cutim.com.br.",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    },
+    {
+      "Name": "VIVO DIRECT",
+      "FLAG": "vivo",
+      "Payload": "GET wss://cadastro.vivo.com.br/ HTTP/1.1[crlf]Host: br.baronnetssl.online[crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "",
+      "TlsIP": "",
+      "ProxyIP": "104.18.7.80",
+      "ProxyPort": "80",
+      "Info": "Proxy"
+    },
+    {
+      "Name": "CLARO SEM PROMOÇÃO",
+      "FLAG": "claro",
+      "Payload": "GET sni://no.descomplica.com.br HTTP/1.1[crlf]Host: br.baronnetssl.online[crlf]X-Forward-Host: br.baronnetssl.online[crlf]Connection: upgrade[crlf]upgrade: websocket[crlf][crlf]",
+      "SNI": "no.descomplica.com.br",
+      "TlsIP": "no.descomplica.com.br",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    },
+    {
+      "Name": "OI SSLPAY ORACLE2",
+      "FLAG": "oi",
+      "Payload": "GET wss://www.hbogo.com.br HTTP/1.1[crlf]Host: br.baronnetssl.online[crlf]Upgrade: websocket[crlf][crlf]",
+      "SNI": "www.hbogo.com.br",
+      "TlsIP": "www.hbogo.com.br",
+      "ProxyIP": "",
+      "ProxyPort": "",
+      "Info": "Tlsws"
+    }
+  ]
+}
